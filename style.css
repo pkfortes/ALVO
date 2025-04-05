@@ -1,0 +1,23 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+.logo{
+    width: 3rem;
+    height: auto;
+    margin: 1rem;
+}
