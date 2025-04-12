@@ -13,6 +13,8 @@ body{
     background-position: center;/*Centraliza*/
     
     margin: 0px;
+    display: flex;
+    flex-direction: column;
     
 
 
@@ -59,8 +61,25 @@ header{
 .section1{
     padding-top: 3rem;
     margin-left: 2rem;
+
 }
 .section1 h1{
     font-weight:lighter;
     font-size: 2rem;
+}
+
+.section2{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-left: 0rem;
+    margin-top: 3rem;
+    background-color: black;
+}
+.section2 h1{
+    margin-left: 2rem;
+    font-weight:lighter;
+    font-size: 2rem;
+}
+.section2 p{
+    margin-left: 2rem;
 }
