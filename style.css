@@ -83,3 +83,26 @@ header{
 .section2 p{
     margin-left: 2rem;
 }
+
+.section3{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5rem;
+    text-align: center;
+}
+
+.pack{
+   margin: 2rem;
+}
+
+.section3 .pack img{
+    width: 15rem;
+}
+
+
+@media screem (max-width: 480px) {
+    .section3 {
+        grid-template-columns: 1fr; /* Ajuste automático das colunas */
+    }
+}
+
