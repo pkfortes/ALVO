@@ -16,10 +16,9 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    
-
 
 }
+
 
 
 h1{
@@ -107,3 +106,63 @@ header{
     }
 }
 
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Formulario */
+
+.form-section{
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    color: black;
+}
+
+.form-section h2{
+    text-align: center;
+    color: #333;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input{
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+textarea{
+    color: black;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0055a3;
+}
