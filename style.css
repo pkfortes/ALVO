@@ -108,24 +108,37 @@ header{
 
 
 
+#line{
+    border: 1px solid white;
+}
+
+
+
 
 html{
     scroll-behavior: smooth;
 }
 
 /* Formulario */
+prosec{
 
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
 .form-section{
-    background-color: white;
+    justify-content: center;
+    width: 480px;
+    background-color: rgb(0, 0, 0, 0.5);
     padding: 20px 30px;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
     color: black;
 }
 
 .form-section h2{
     text-align: center;
-    color: #333;
+    color: #ffffff;
 }
 
 form{
@@ -134,29 +147,31 @@ form{
 }
 
 label{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 
 input{
     padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     border-radius: 5px;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 textarea{
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
-    border:1px solid #ccc;
+    border:1px solid #fafafa;
+    background-color: black;
 }
 
 button{
     margin-top: 20px;
     padding: 10px;
     font-size: 16px;
-    background-color: #0066cc;
+    background-color: #f14b09;
     color: white;
     border: none;
     border-radius: 5px;
@@ -164,5 +179,5 @@ button{
 }
 
 button:hover{
-    background-color: #0055a3;
+    background-color: #7e1507;
 }
