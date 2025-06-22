@@ -9,6 +9,7 @@
 
 /* LINHA */
 #line{
+    position: relative;
     width: 100vw;
     height: 10px;
     background-color: white;
@@ -206,4 +207,14 @@ header{
     max-width: 100%; /*Garantiu que nao sobrasse e ajustaje exantamente*/
 
     top: 205rem;
+}
+
+.v{
+    position:absolute;
+    z-index: 0;
+    pointer-events: none;
+    max-width: 90%;
+
+    top: -3rem;
+    left: 8rem;
 }
