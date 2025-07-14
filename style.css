@@ -23,6 +23,9 @@
 /* HTML */
 html{
     scroll-behavior: smooth;
+
+    width:100%;
+    overflow-x: hidden; /*Isso eliminou o Overflow X mas forçado, pois o conteudo do footer e form ficou cortado*/
 }
 
 /*ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
@@ -31,6 +34,8 @@ html{
     width: 100%;
     min-height: 100vh;
     background-color: rgb(0, 0, 0, 0.8);
+
+    margin: 0 auto;
 }
 
 
@@ -62,6 +67,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     background-color: rgba(255, 3, 3, 0.233);
     padding: 10px;
@@ -70,6 +76,7 @@ header{
     transform: translateX(-50%);
     max-width: 1140px;
     width: 100%;
+    margin: 0 auto;
 }
 
 #logo{
@@ -162,6 +169,8 @@ header{
 
     position: relative;
     z-index: 1;
+
+    align-items: center; /*Alinhou os pacotes ao centro*/
     
 }
 
@@ -194,7 +203,7 @@ header{
 .S4{
     display: flex;
     justify-content: center;
-    padding: 5rem 3rem;
+    padding: 4rem 2rem;
 
     color: white;
 
@@ -202,7 +211,8 @@ header{
     z-index: 1;
 }
 .S4 #form-cont{
-    width: 300px; /*Tamanho que evita o scrool no telefone*/
+    max-width: 300px; /*Tamanho que evita o scrool no telefone*/
+    width: 100%;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 20px 30px;
 
@@ -230,6 +240,8 @@ header{
     border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
+
+    width: 100%;
 }
 .S4 #form-cont form textarea{
     color: white;
@@ -239,7 +251,7 @@ header{
     padding: 5px;
     font-size: 16.7px; /*altera o tamanho da caixa*/
 
-    width: 19.5rem;
+    width: 100%;
 }
 
 .S4 #form-cont form button{
@@ -350,12 +362,11 @@ header{
 footer{
     height: 4rem;
     background-color: rgba(129, 9, 9, 0.986);
-    display: grid;
+    display: flex;
     padding: 1rem;
+    flex-direction: row;
 
-
-    grid-template-columns: repeat(3,1fr);/*3 Colunas Iguais*/
-    gap: 3rem;
+    gap: 1rem;
 
     text-align: center; /*Alinhou o texto ao centro*/
 }
@@ -366,6 +377,24 @@ footer h3{
 footer p{
     color: white;
 }
+
+
+footer h3{
+    font-size: 15px;
+}
+footer p{
+    font-size: 10px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size:10px ;
+}
+
+
+
+
+
 
 
 /* Responsivo para telefones (largura até 600px) */
@@ -398,24 +427,10 @@ footer p{
      
     }
 
-    h1, p{
-        text-align: center;
-    }
+  
 
 
 }
 
 
-    footer h3{
-        font-size: 15px;
-    }
-    footer p{
-        font-size: 10px;
-    }
-    footer a{
-        color: white;
-        text-decoration: none;
-        font-size:10px ;
-    }
- 
     
