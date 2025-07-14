@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Animacao-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Alvo</title>
 </head>
 <body>
-    <img class="pk" src="" alt="">
-    <img class="v" src="" alt="">
-    <!-- Header ---------------------------------------------------------------->
+
+    <div class="ALL">
+
+        <!-- Header ---------------------------------------------------------------->
     <header>
         <img id="logo" src="/Assets/logo.png" alt="">
         <nav id="menu">
@@ -21,8 +27,8 @@
 
     <!-- 1.SECTION -------------------------------------------------------------->
     <div class="S1" id="about">
-        <div id="txt">
-            <h1>Q <b>somos?</b></h1>
+        <div id="txt" data-aos="zoom-in-up" data-aos-duration = "1000">
+            <h1 class="animate__animated animate__jello animate">Quem <b>somos?</b></h1>
             <p>Na ALVO, acreditamos que qualidade e inovação não devem ser privilégio de grandes
             empresas. Somos uma agência de social media criada para transformar a presença
             digital de médios negócios em São Vicente, Cabo Verde — com estratégia, criatividade
@@ -32,16 +38,28 @@
             nas redes sociais oferecendo soluções feitas à medida, com conteúdo de alto nível e
             design moderno.</p>
         </div>
+        <div id="imgs" data-aos="zoom-in-up" data-aos-duration = "1300">
+            <img src="Assets/Vando.png" alt="">
+        </div>
     </div>
 
     <!-- 2.SECTION --------------------------------------------------------------->
     <div class="S2">
-        <h1>O que <b>fazemos?</b></h1>
-        <p>Na ALVO, oferecemos serviços especializados em gestão de redes sociais, pensados
+
+        <div id="imgs" data-aos="zoom-in-up" data-aos-duration = "1000"> 
+            <img src="Assets/Pack.png" alt="">
+
+        </div>
+
+        <div id="txt2" data-aos="zoom-in-up" data-aos-duration = "1300">
+            <h1>O que <b>fazemos?</b></h1>
+            <p>Na ALVO, oferecemos serviços especializados em gestão de redes sociais, pensados
             para impulsionar o crescimento de pequenos e médios negócios em São Vicente.
             Nosso trabalho vai além de apenas postar conteúdos: criamos estratégias digitais sob
             medida, que posicionam marcas de forma sólida, moderna e profissional no ambiente
             online.</p>
+        </div>
+        
     </div>
 
     <!-- LINEEEEEEEEEEEEEEEEEEEE -->
@@ -52,30 +70,30 @@
      <div class="S3" id="services">
         <div id="txt"><h1>Nossos serviços incluem</h1></div>
         <div class="packS">
-            <div id="pack">
+            <div id="pack" data-aos="zoom-in-up" data-aos-duration = "1000">
             <img src="/Assets/1.png" alt="">
             <p>Planejamento, criação e publicação de conteúdos alinhados à identidade da marca.
                 Cuidamos de tudo: do calendário editorial às interações com o público.</p>
             </div>
-            <div id="pack">
+            <div id="pack" data-aos="zoom-in-up" data-aos-duration = "1100">
                 <img src="/Assets/2.png" alt="">
-                <p>Designs modernos, textos persuasivos e visuais que se destacam — sempre com foco em conectar e engajar.</p>
+                <p>Designs modernos e visuais que se destacam — sempre com foco em conectar e engajar.</p>
             </div>
-            <div id="pack">
+            <div id="pack" data-aos="zoom-in-up" data-aos-duration = "1200">
                 <img src="/Assets/3.png" alt="">
                 <p>Ajudamos a construir uma imagem de marca forte, autêntica e memorável. Da
                     biografia no Instagram ao tom de voz usado nas legendas, cada detalhe é pensado com
                     estratégia.</p>
             </div>
-            <div id="pack">
+            <div id="pack" data-aos="zoom-in-up" data-aos-duration = "1300">
                 <img src="/Assets/4.png" alt="">
                 <p>Desenvolvimento de campanhas sazonais e promocionais para gerar tráfego, leads e
                     vendas com foco em resultados mensuráveis.</p>
             </div>
-            <div id="pack">
+            <div id="pack" data-aos="zoom-in-up" data-aos-duration = "1400">
                 <img src="/Assets/5.png" alt="">
                 <p>Acompanhamos o desempenho de cada ação com relatórios claros, para que o cliente
-                    veja onde está e para onde pode ir.</p>
+                    veja onde está e aonde pode chegar.</p>
             </div>
         </div>
      </div>
@@ -83,22 +101,64 @@
       <!-- LINEEEEEEEEEEEEEEEEEEEE -->
     <div id="line"></div>
 
+    <!-- 5.SECTION --------------------------------------------------------------->
+     <div class="S5">
+
+            <div id="txt2" data-aos="zoom-in-up" data-aos-duration = "1000">
+                <h1>Competências<b> Profissionais</b></h1>
+                <p>Responsável pela identidade visual e produção de vídeos da nossa agência, 
+                    o nosso designer e videomaker domina as principais ferramentas da Adobe 
+                    (Premiere Pro, After Effects, Photoshop, Illustrator), criando conteúdos dinâmicos, 
+                    modernos e ajustados a cada objetivo de comunicação. Desde vídeos institucionais e promocionais
+                     até reels criativos e animações, garantimos uma estética consistente e impactante para marcas
+                      que querem destacar-se no digital.</p>
+            </div>
+
+            <div id="imgs" data-aos="zoom-in-up" data-aos-duration = "1200">
+                <img src="Assets/PK.png" alt="">
+            </div>
+       
+     </div>
+
+      <!-- 7.SECTION --------------------------------------------------------------->
+      <div class="S6">
+        <div id="imgs" data-aos="zoom-in-up">
+                    <img src="Assets/Marco.png" alt="">
+        </div>
+
+        <div id="txt2" data-aos="zoom-in-up" data-aos-duration = "1200">
+            <h1>Captações</b></h1>
+            <p>O nosso cameraman domina a arte da captação de vídeo e áudio.
+                 Com um olhar apurado, transforma cada cena em narrativa visual, 
+                 através de enquadramentos precisos, movimentos fluidos e atenção aos detalhes. Seja em ambientes 
+                 internos ou externos, para eventos, vídeos institucionais ou campanhas digitais, cada plano é 
+                 captado com qualidade cinematográfica e propósito claro.</p>
+        </div>
+
+   
+    </div>
+
+
+    <!-- LINEEEEEEEEEEEEEEEEEEEE -->
+    <div id="line"></div>
+
+
     <!-- 4.SECTION --------------------------------------------------------------->
      <div class="S4" id="contacts">
-        <div id="form-cont">
+        <div id="form-cont" data-aos="zoom-in-up" data-aos-duration = "1000">
             <h2>Fale connosco</h2>
-            <form action="https://formsubmit.co/carlospatrick5555@gmail.com" method="POST">
+            <form action="https://formsubmit.co/alvoagencymd@gmail.com" method="POST">
                 <label for="nome"></label>
-                <input type="text" name="nome" placeholder="Seu nome aqui">
+                <input type="text" name="nome" placeholder="Empresa">
 
                 <label for="email"></label>
-                <input type="email" name="email" placeholder="Seu email aqui">
+                <input type="email" name="email" placeholder="Email">
 
                 <label for="numero"></label>
-                <input type="tel" name="numero" placeholder="Seu numero aqui">
+                <input type="tel" name="numero" placeholder="Número">
 
                 <label for="mensagem"></label>
-                <textarea name="mensagem" id="sms" placeholder="Escreva sua mensagem" rows="5"></textarea>
+                <textarea name="mensagem" id="sms" placeholder="Mensagem" rows="5"></textarea>
 
                 <button type="submit">Enviar</button>
                 </form>
@@ -108,7 +168,31 @@
      <!-- LINEEEEEEEEEEEEEEEEEEEE -->
     <div id="line"></div>
 
-    
+     <footer>
+        <div class="P1">
+           <h3>Instagram</h3> 
+           <a href="https://www.instagram.com/alvo_agencym?igsh=MXQ4dG1vOXN3a20yMA=="> Clique aqui</a>
+        </div>
 
+        <div class="P2">
+            <h3>Email</h3> 
+            <p>alvoagencymd@gmail.com</p>
+         </div>
+
+         <div class="P3">
+            <h3>WhatsApp</h3> 
+            <p>+238 9999999</p>
+         </div>
+        
+
+     </footer>
+    </div>
+
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

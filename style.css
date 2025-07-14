@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import 'animate.css';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -10,8 +11,8 @@
 /* LINHA */
 #line{
     position: relative;
-    width: 100vw;
-    height: 10px;
+    width: 100%;
+    height: 1px;
     background-color: white;
 }
  /* H1 */
@@ -23,6 +24,16 @@
 html{
     scroll-behavior: smooth;
 }
+
+/*ALLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
+.ALL{
+    max-width: 1140px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+
 
 
 /* BODY ------------------------------------------------------------------------------------------------------------------*/
@@ -37,6 +48,8 @@ body{
     flex-direction: column; /*Elementos serao dispostos um abaixo do outro*/
     overflow-x: hidden; /*Se algum elemento vazar, nao vaia aparecer*/
     
+
+    align-items: center; /*Alinhou o div principal no centro*/
 }
 
 /*HEADER -------------------------------------------------------------------------------------------------------------------*/
@@ -49,9 +62,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
 
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(255, 3, 3, 0.233);
     padding: 10px;
-    width: 100vw;
+    max-width: 1140px;
+    width: 100%;
 }
 
 #logo{
@@ -74,19 +88,30 @@ header{
 /* 1.SECTION --------------------------------------------------------------------------------------------------------------------*/
 .S1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10px;
     color: white;
+
     margin-top: 6rem;
+    margin: 5rem;
+    gap: 6rem;
 
     position: relative;
     z-index: 1;
+
     
+    
+}
+.S1 #txt{
+    margin-top: 2rem; /*Allinhou com o Vando*/
+}
+.S1 img{
+    width: 25rem;
 }
 
 /* TXT */
 .S1 h1{
-    
+    margin-bottom: 1rem;
 }
 .S1 p{
     
@@ -94,6 +119,13 @@ header{
 
 /* 2.SECTION ----------------------------------------------------------------------------------------------------------------------*/
     .S2{
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 6rem;
+        margin: 5rem;
+        gap: 6rem;
+
         color: white;
         margin-top: 3rem;
         margin-bottom: 3rem;/*Para se afastar do LINE*/
@@ -103,13 +135,23 @@ header{
         z-index: 1;
     }
 
+    .S2 img{
+        width: 25rem;
+    }
+
+
+    .S2 h1{
+    margin-bottom: 1rem;
+}
+
+
 /* 3.SECTION ---------------------------------------------------------------------------------------------------------------------*/
 .S3{
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-top: 0px;/*Para juntar com i LINE*/
-    padding: 10px;
+    padding: 6rem;
     color: white;
     background-color: rgb(0, 0, 0, 0.5);
     text-align: center;/*Alinhou o titulo no centro*/
@@ -118,6 +160,13 @@ header{
     z-index: 1;
     
 }
+
+.S3 h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
 .S3 .packS{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -152,6 +201,10 @@ header{
     width: 300px; /*Tamanho que evita o scrool no telefone*/
     background-color: rgb(0, 0, 0, 0.5);
     padding: 20px 30px;
+
+    border-radius: 10px; /*Update 14 Julho*/
+    border: 1px solid white;
+
 }
 .S4 #form-cont h2{
     text-align: center;
@@ -169,18 +222,20 @@ header{
 .S4 #form-cont form input{
     padding: 5px;
     font-size: 16px;
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 0.1px solid white;
+    border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
 }
 .S4 #form-cont form textarea{
     color: white;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 16.7px; /*altera o tamanho da caixa*/
+
+    width: 19.5rem;
 }
 
 .S4 #form-cont form button{
@@ -189,7 +244,7 @@ header{
     color: white;
     background-color: rgb(247, 14, 14);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     padding: 10px;
 
@@ -218,3 +273,143 @@ header{
     top: -3rem;
     left: 8rem;
 }
+
+
+
+/* 5. SECTION ----------------------------------------------------------------------------------*/
+.S5{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 6rem;
+    margin: 5rem;
+    gap: 6rem;
+
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;/*Para se afastar do LINE*/
+    padding: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.S5 img{
+    width: 25rem;
+}
+
+.S5 #txt2{
+    margin-top: 3rem;
+}
+
+.S5 h1{
+    margin-bottom: 1rem;
+}
+
+
+
+/* 6. SECTION ----------------------------------------------------------------------------------*/
+.S6{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 6rem;
+    margin: 5rem;
+    gap: 6rem;
+
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;/*Para se afastar do LINE*/
+    padding: 10px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.S6 img{
+    width: 25rem;
+}
+
+.S6 #txt2{
+    margin-top: 5rem;
+}
+
+.S6 h1{
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* FOOTER ----------------------------------------------------------------------------------*/
+
+footer{
+    height: 4rem;
+    background-color: rgba(129, 9, 9, 0.986);
+    display: grid;
+    padding: 1rem;
+
+
+    grid-template-columns: repeat(3,1fr);/*3 Colunas Iguais*/
+    gap: 3rem;
+
+    text-align: center; /*Alinhou o texto ao centro*/
+}
+
+footer h3{
+    color: white;
+}
+footer p{
+    color: white;
+}
+
+
+/* Responsivo para telefones (largura até 600px) */
+@media (max-width: 600px) {
+    .S1,
+    .S2,
+    .S5,
+    .S6 {
+      flex-direction: column;
+      align-items: center; /* Centraliza os itens na vertical */
+      gap: 2rem; /* Reduz um pouco o espaço entre os elementos */
+      margin: 2rem 1rem; /* Ajusta as margens laterais */
+    }
+  
+    .S1 img,
+    .S2 img,
+    .S5 img,
+    .S6 img {
+      width: 100%; /* Imagens mais adaptadas ao ecrã */
+     ; /* Evita que fiquem demasiado grandes */
+     order: 2;
+    }
+  
+    .S1 #txt,
+    .S2 #txt,
+    .S5 #txt2,
+    .S6 #txt2 {
+      margin-top: 0; /* Remove margens superiores desnecessárias */
+      order: 1;
+     
+    }
+
+    h1, p{
+        text-align: center;
+    }
+    }
+
+
+    footer h3{
+        font-size: 15px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+        font-size:10px ;
+    }
+ 
+    
