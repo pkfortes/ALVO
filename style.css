@@ -48,6 +48,7 @@ body{
     flex-direction: column; /*Elementos serao dispostos um abaixo do outro*/
     overflow-x: hidden; /*Se algum elemento vazar, nao vaia aparecer*/
     
+    max-width: 100%;
 
     align-items: center; /*Alinhou o div principal no centro*/
 }
@@ -64,6 +65,9 @@ header{
 
     background-color: rgba(255, 3, 3, 0.233);
     padding: 10px;
+    
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 1140px;
     width: 100%;
 }
@@ -397,7 +401,9 @@ footer p{
     h1, p{
         text-align: center;
     }
-    }
+
+
+}
 
 
     footer h3{
