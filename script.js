@@ -1,29 +1,19 @@
-document.getElementById('OFormulario').addEventListener('submit', function(event){//quando clicarem no botao
-    event.preventDefault()//Impede o envio padrao do formulario
+(function (){
+    emailjs.init("4F1s83w7FtkTEoIrP");
+})();
 
-    // deve ser retirado quando habilitar o envio do dos dados para o email
+document.getElementById('contact-us').addEventListener('submit', function(event){
+    event.preventDefault();
 
-    //por padrao quando um fomrulario e enviado a pagina recarrega
-    //o comando acima evita isso possibilitando capturar os dados com js
-
-
-    //Captura os valores
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const numero = document.getElementById('numero').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    //Mostra os dados no console(poderiria ser enviado par aum servidor)
-    console.log("Nome:", nome);
-    console.log("Email:", email);
-    console.log("Numero:", numero);
-    console.log("Mensagem:", mensagem);
-
-
-    //Exemplo alerta para o user
-    alert("Obridado pelo envio, "+ nome + "!"); //pop-up
-
-    //limpa os campos
-    document.getElementById('OFormulario').reset();
-
+    emailjs.send("service_30o3xtw", "template_yne07tn", {
+      form_name: document.getElementById("name").value,
+      message: document.getElementById("message").value,
+      number: document.getElementById("number").value,
+      reply_to: document.getElementById("email"), value
+    })
+    .then(function (response){
+        alert("A sua mensagem foi enviada!");
+    }, function(error){
+        alert("Erro ao enviar:" + error.text);
+    });
 });

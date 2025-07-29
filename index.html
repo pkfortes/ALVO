@@ -148,18 +148,18 @@
      <div class="S4" id="contacts">
         <div id="form-cont" data-aos="zoom-in-up" data-aos-duration = "1000">
             <h2>Fale connosco</h2>
-            <form action="https://formsubmit.co/alvoagencymd@gmail.com" method="POST">
-                <label for="nome"></label>
-                <input type="text" name="nome" placeholder="Empresa">
+            <form id="contact-us">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Empresa">
 
                 <label for="email"></label>
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email">
 
-                <label for="numero"></label>
-                <input type="tel" name="numero" placeholder="Número">
+                <label for="number"></label>
+                <input type="tel" name="number" id="number" placeholder="Número">
 
-                <label for="mensagem"></label>
-                <textarea name="mensagem" id="sms" placeholder="Mensagem" rows="5"></textarea>
+                <label for="message"></label>
+                <textarea name="message" id="message" placeholder="Mensagem" rows="5"></textarea>
 
                 <button type="submit">Enviar</button>
                 </form>
@@ -195,5 +195,8 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
