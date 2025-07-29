@@ -9,7 +9,7 @@ document.getElementById('contact-us').addEventListener('submit', function(event)
       form_name: document.getElementById("name").value,
       message: document.getElementById("message").value,
       number: document.getElementById("number").value,
-      reply_to: document.getElementById("email"), value
+      reply_to: document.getElementById("email").value
     })
     .then(function (response){
         alert("A sua mensagem foi enviada!");
