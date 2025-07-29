@@ -1,8 +1,5 @@
 
-import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
-
 emailjs.init("4F1s83w7FtkTEoIrP");
-
 
 document.getElementById('contact-us').addEventListener('submit', function(event){
     event.preventDefault();
