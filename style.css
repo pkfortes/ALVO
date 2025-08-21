@@ -44,7 +44,7 @@ html{
 /* BODY ------------------------------------------------------------------------------------------------------------------*/
 body{
     position: relative;
-    background-image: url(/Assets/back.png);
+    background-image: url(Assets/back.png);
     background-size: cover;  /*Faz a imagem cobrir toda tela sem deforma-la mesmo que seja cortada*/
     background-attachment: fixed; /*-COM ISSO PREENHEU A TELA TODA - fixa a imagem e nao sobre efeito com srool*/
     background-position: center; /*Centraliza a imagem no body, tanto vertical com horizontal;*/
@@ -393,6 +393,39 @@ footer a{
 }
 
 
+.sv{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    gap: 10px;
+
+
+}
+
+.sv iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9/16; /* mantém proporção vertical (story/reel) */
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.filter{
+    position: absolute;
+    background-color: #ff1e00;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+.h11{
+    color: white;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 30px;
+
+}
 
 
 
